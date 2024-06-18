@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@300;500&display=swap">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-image: url('bg.jpg'); /* Background image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        /* Navigation styles */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main styles */
+        main {
+            padding: 20px;
+        }
+
+        /* Section styles */
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #343a40;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        section p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Contact form styles */
+        #contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        #contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #contact-form input[type="text"],
+        #contact-form input[type="email"],
+        #contact-form textarea,
+        #contact-form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        #contact-form textarea {
+            resize: vertical;
+        }
+
+        #contact-form button {
+            background-color: #343a40;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #contact-form button:hover {
+            background-color: #1e2124;
+        }
+
+        /* Visit Us section styles */
+        main section:nth-child(2) {
+            margin-top: 30px;
+        }
+
+        main section:nth-child(2) p {
+            margin-bottom: 10px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            header {
+                padding: 0.5rem 0;
+            }
+            
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            
+            main {
+                padding: 10px;
+            }
+            
+            section h2 {
+                font-size: 20px;
+            }
+            
+            #contact-form {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Visit Us</h2>
+            <p>Hall Street, Erode, India</p>
+            <p>Phone: +919003344049</p>
+            <p>Email: myrestaurant@gmail.com</p>
+        </section>
+        <section>
+            <h2>Get in Touch</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea><br>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Restaurant Management</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Home</title>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@300;500&display=swap">
+    <!-- Include External CSS -->
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Raleway', sans-serif; /* Body font */
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #232222;
+            margin: 0;
+            padding: 0;
+            background-image: url('bg.jpg'); /* Background image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Ensures the background image remains fixed as the content scrolls */
+        }
+
+        /* Header styles */
+        header {
+            background-color: rgba(52, 58, 64, 0.8); /* Semi-transparent background */
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif; /* Header font */
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem; /* Larger font size */
+            letter-spacing: 2px; /* Spacing between letters */
+        }
+
+        /* Navigation styles */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main styles */
+        main {
+            padding: 20px;
+        }
+
+        /* Section styles */
+        section {
+            margin-bottom: 30px;
+            background-color: rgba(255, 255, 255, 0.9); /* Background color for sections */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for a card-like effect */
+        }
+
+        section h2 {
+            font-size: 2rem; /* Larger font size for headers */
+            margin-bottom: 10px;
+            color: #343a40;
+            font-family: 'Montserrat', sans-serif; /* Header font */
+        }
+
+        section p {
+            font-size: 1rem;
+            line-height: 1.5;
+            font-family: 'Raleway', sans-serif; /* Body font */
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: rgba(52, 58, 64, 0.8); /* Semi-transparent background */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            header {
+                padding: 0.5rem 0;
+            }
+            
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            
+            main {
+                padding: 10px;
+            }
+            
+            section h2 {
+                font-size: 1.5rem;
+            }
+            
+            section p {
+                font-size: 0.875rem;
+            }
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;        /* Adjust padding for the desired size */
+            margin-top: 20px;          /* Space above the button */
+            font-size: 16px;           /* Adjust font size as needed */
+            color: #fff;               /* Button text color */
+            background-color: #007BFF; /* Background color */
+            border: none;              /* No border */
+            border-radius: 50px;       /* Rounded corners */
+            text-decoration: none;     /* Remove underline from link */
+            text-align: center;        /* Center text */
+            cursor: pointer;           /* Pointer cursor on hover */
+            transition: all 0.3s ease; /* Smooth background color transition */
+            position: relative;        /* For inner glow effect */
+            overflow: hidden;          /* Hide overflow for inner elements */
+        }
+
+        /* Hover effect */
+        .btn:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+            box-shadow: 0 0 10px #007BFF, 0 0 20px #007BFF, 0 0 30px #007BFF; /* Glow effect */
+        }
+
+        /* Inner glow animation */
+        .btn::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at center, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover::after {
+            top: -25%;
+            left: -25%;
+            width: 150%;
+            height: 150%;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RFC Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="menu-highlights" class="section-menu">
+            <h2>Menu Highlights</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <h3>Signature Dish 1</h3>
+                    <p>A delicious description of your first signature dish, emphasizing its unique flavors and ingredients.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Signature Dish 2</h3>
+                    <p>A tantalizing description of your second signature dish, highlighting why it's a must-try for guests.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Signature Dish 3</h3>
+                    <p>A mouthwatering description of your third signature dish, showcasing its special appeal.</p>
+                </div>
+            </div>
+            <!-- Link the button to the menu page -->
+            <a href="menu.html" class="btn">Explore Full Menu</a>
+        </section>
+        
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Restaurant Management</p>
+    </footer>
+</body>
+</html>

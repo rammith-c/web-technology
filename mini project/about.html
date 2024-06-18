@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@300;500&display=swap">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-image: url('bg.jpg'); /* Background image URL */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        /* Header styles */
+        header {
+            background-color: rgba(52, 58, 64, 0.7); /* Semi-transparent background */
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        header h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        /* Navigation styles */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main styles */
+        main {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+            border-radius: 8px; /* Rounded corners for content */
+            margin: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow for depth */
+        }
+
+        /* Section styles */
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #343a40;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        section p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333; /* Adjusted text color */
+        }
+
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            margin-right: 20px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .team-member div {
+            flex: 1;
+        }
+
+        .team-member h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+            color: #343a40; /* Heading color */
+        }
+
+        .team-member p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: rgba(52, 58, 64, 0.7); /* Semi-transparent background */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            header {
+                padding: 0.5rem 0;
+            }
+            
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            
+            main {
+                padding: 10px;
+            }
+            
+            section h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li> <!-- Highlight current page in navigation -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Our Mission</h2>
+            <p>At RFC, our mission is to create memorable dining experiences by offering exquisite dishes, attentive service, and a welcoming environment. We aim to exceed our guests' expectations and leave a lasting impression with every visit.</p>
+        </section>
+        <section>
+            <h2>Meet Our Team</h2>
+            <div class="team-member">
+                <img src="chef.jpg" alt="Chef">
+                <div>
+                    <h3>Chef John Doe</h3>
+                    <p>With over 15 years of culinary experience, Chef John Doe leads our talented kitchen team with passion and creativity.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="manager.jpg" alt="Manager">
+                <div>
+                    <h3>Manager Jane Smith</h3>
+                    <p>Jane Smith ensures smooth operations and exceptional guest service at RFC. She brings extensive hospitality expertise to our team.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Restaurant Management</p>
+    </footer>
+</body>
+</html>
